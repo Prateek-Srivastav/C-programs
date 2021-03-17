@@ -1,2 +1,1 @@
-# C-programs
-beginner programs in C
+Tic-Tac-Toe
