@@ -6,8 +6,6 @@ void drawBoard();
 int markBoard(int mark);
 int checkForWin();
 
-
-
 int main()
 {
     drawBoard();
@@ -22,10 +20,8 @@ int main()
         checkForWin();
         if(returnValue == 1 || returnValue == 0)
             break;
-
-
-
     }
+    
     if(returnValue == 1)
         printf("\n\n\t!!Player %d won!!\n\n", player);
     else if(returnValue == 0)
@@ -49,10 +45,8 @@ void drawBoard()
     }
     printf("\n\t     |     |     ");
 
-    if(returnvalue == -1)
-    {
+    if(returnvalue == -1) {
         printf("\nInvalid move\nPlease enter correct number.\n");
-
         getchar();
         player--;
     }
@@ -88,9 +82,6 @@ int markBoard(int mark)
 
 int checkForWin()
 {
-
-
-
     if(elements[1]==elements[2] && elements[2]==elements[3])
         returnValue = 1;
     else if(elements[4]==elements[5] && elements[5]==elements[6])
